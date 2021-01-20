@@ -36,12 +36,14 @@ public class Player : MonoBehaviour
 
     private void ProcessMovement()
     {
+        //x movement
         xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
         float xOffSet = xThrow * xSpeed * Time.deltaTime;
         float rawXPos = transform.localPosition.x + xOffSet;
         float xPos = Mathf.Clamp(rawXPos, -xRange, xRange);
         transform.localPosition = new Vector3(xPos, transform.localPosition.y, transform.localPosition.z);
 
+        //y movement
         yThrow = CrossPlatformInputManager.GetAxis("Vertical");
         float yOffSet = yThrow * ySpeed * Time.deltaTime;
         float rawYPos = transform.localPosition.y + yOffSet;
