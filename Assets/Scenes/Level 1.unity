@@ -857,22 +857,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1428703904410668884, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
-      propertyPath: controlRollFactor
-      value: -50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1428703904410668884, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
-      propertyPath: xRange
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 1428703904410668884, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
-      propertyPath: yMinRange
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1428703904410668884, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
-      propertyPath: yMaxRange
-      value: 11
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
 --- !u!4 &1219253899 stripped
