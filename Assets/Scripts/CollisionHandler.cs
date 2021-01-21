@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
-    [SerializeField] GameObject deathFX;
-    [SerializeField] float levelLoadDelay = 1.5f;
+    [Tooltip("FX Prefab On Player")][SerializeField] GameObject deathFX;
+    [Tooltip("In Seconds")] [SerializeField] float levelLoadDelay = 1.5f;
     private void OnTriggerEnter(Collider other)
     {
         StartDeathSequence();
