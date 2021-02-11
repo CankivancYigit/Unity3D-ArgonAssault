@@ -7,6 +7,9 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] GameObject deathFX;
     [SerializeField] Transform parent;
+    [SerializeField] int hitPoints = 10;
+
+    ScoreBoard scoreBoard;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +27,6 @@ public class Enemy : MonoBehaviour
         GameObject newDeathFX = Instantiate(deathFX, transform.position, Quaternion.identity);
         newDeathFX.transform.parent = parent;
         Destroy(gameObject);
-        FindObjectOfType<ScoreBoard>().ScoreHit();
+        scoreBoard.ScoreHit(hitPoints);
     }
 }

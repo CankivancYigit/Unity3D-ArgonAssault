@@ -7,7 +7,7 @@ public class ScoreBoard : MonoBehaviour
 {
     int score;
     Text scoreText;
-    int hitPoints = 10;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +16,7 @@ public class ScoreBoard : MonoBehaviour
         scoreText.text = score.ToString();
     }
 
-    public void ScoreHit()
+    public void ScoreHit(int hitPoints)
     {
         score = score + hitPoints;
         scoreText.text = score.ToString();
