@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &30911653 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2110278682341984093, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
+  m_PrefabInstance: {fileID: 1163812280}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &117751343
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +371,11 @@ PrefabInstance:
       objectReference: {fileID: 1480738084}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf374732b0ea2c34daa340dc2de7f746, type: 3}
+--- !u!1 &407706921 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1374828270, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
+  m_PrefabInstance: {fileID: 1163812280}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &497240512 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4232234352724882, guid: e14d375f5a36551479fc2f172353b1ba, type: 3}
@@ -1212,6 +1222,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 963194228}
     m_Modifications:
+    - target: {fileID: 1374828270, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
+      propertyPath: m_Name
+      value: Gun Left
+      objectReference: {fileID: 0}
     - target: {fileID: 1374828275, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
       propertyPath: CollisionModule.enabled
       value: 1
@@ -1272,9 +1286,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1428703904410668884, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
+      propertyPath: guns.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1428703904410668884, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
+      propertyPath: guns.Array.data[0]
+      value: 
+      objectReference: {fileID: 407706921}
+    - target: {fileID: 1428703904410668884, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
+      propertyPath: guns.Array.data[1]
+      value: 
+      objectReference: {fileID: 30911653}
     - target: {fileID: 2110278682341984064, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
       propertyPath: CollisionModule.enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2110278682341984093, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
+      propertyPath: m_Name
+      value: Gun Right
       objectReference: {fileID: 0}
     - target: {fileID: 2744429558262736583, guid: f805c7b2f982faf43833878e4f22ae2a, type: 3}
       propertyPath: deathFX

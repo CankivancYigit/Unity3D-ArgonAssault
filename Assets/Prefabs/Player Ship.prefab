@@ -326,6 +326,9 @@ MonoBehaviour:
   xRange: 18
   yMinRange: -10
   yMaxRange: 11
+  guns:
+  - {fileID: 1374828270}
+  - {fileID: 2110278682341984093}
   positionPitchFactor: 1.5
   positionYawFactor: 3
   controlPitchFactor: -30
@@ -371,7 +374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f97ef84eea3826c41b13b505a6122e36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathFX: {fileID: 0}
+  deathFX: {fileID: 5261152110195845927}
   levelLoadDelay: 1.5
 --- !u!1 &1692945755674982
 GameObject:
@@ -506,10 +509,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 88149829066510822, guid: 14743f0317044094e933e2de42b160a1, type: 3}
       propertyPath: m_Name
-      value: Bullets
+      value: Gun Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 88149829066510843, guid: 14743f0317044094e933e2de42b160a1, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 88149829066510843, guid: 14743f0317044094e933e2de42b160a1, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 88149829066510843, guid: 14743f0317044094e933e2de42b160a1, type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 88149829066510843, guid: 14743f0317044094e933e2de42b160a1, type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14743f0317044094e933e2de42b160a1, type: 3}
+--- !u!1 &1374828270 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 88149829066510822, guid: 14743f0317044094e933e2de42b160a1, type: 3}
+  m_PrefabInstance: {fileID: 88149827740198664}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1374828269 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 88149829066510821, guid: 14743f0317044094e933e2de42b160a1, type: 3}
@@ -570,8 +594,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Death FX
       objectReference: {fileID: 0}
+    - target: {fileID: 5258096869533565628, guid: 5483fb0e7f7f5654a8c792e176529e76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258096869533565631, guid: 5483fb0e7f7f5654a8c792e176529e76, type: 3}
+      propertyPath: m_Volume
+      value: 0.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5483fb0e7f7f5654a8c792e176529e76, type: 3}
+--- !u!1 &5261152110195845927 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5258096869533565628, guid: 5483fb0e7f7f5654a8c792e176529e76, type: 3}
+  m_PrefabInstance: {fileID: 142952758039898523}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5261152110195845947 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5258096869533565600, guid: 5483fb0e7f7f5654a8c792e176529e76, type: 3}
@@ -630,10 +667,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 88149829066510822, guid: 14743f0317044094e933e2de42b160a1, type: 3}
       propertyPath: m_Name
-      value: Bullets (1)
+      value: Gun Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 88149829066510843, guid: 14743f0317044094e933e2de42b160a1, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 88149829066510843, guid: 14743f0317044094e933e2de42b160a1, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14743f0317044094e933e2de42b160a1, type: 3}
+--- !u!1 &2110278682341984093 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 88149829066510822, guid: 14743f0317044094e933e2de42b160a1, type: 3}
+  m_PrefabInstance: {fileID: 2049169212011157179}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2110278682341984094 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 88149829066510821, guid: 14743f0317044094e933e2de42b160a1, type: 3}
